@@ -98,6 +98,10 @@ figcaption {
     margin: 1.5px;
 }
 
+.resources li {
+    padding: 1rem;
+}
+
 footer {
     background: var(--main-color);
     color: var(--text-color);
