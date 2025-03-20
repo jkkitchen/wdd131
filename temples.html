@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Week 2 Assignment | Temples</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="Week 2 Assigment: Temples">
+    <!--Link to 2 CSS files-->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <!--Link to Javascript file-->
+    <script src="scripts/temples.js" defer></script>
+    <!--Afacad Flux Font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p>Temple Album</p>
+
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/">Old</a></li>
+                <li><a href="#/">New</a></li>
+                <li><a href="#/">Large</a></li>
+                <li><a href="#/">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="temple-figures">
+            <figure class="temple-pic" id="temple-1">
+                <img src="images/atlanta-temple.webp" alt="Atlanta, Georgia Temple">
+                <figcaption>Atlanta Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-2">
+                <img src="images/columbia-temple.webp" alt="Columbia, South Carolina Temple">
+                <figcaption>Columbia Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-3">
+                <img src="images/houston-temple.webp" alt="Houston, Texas Temple">
+                <figcaption>Houston Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-4">
+                <img src="images/san-antonio-temple.webp" alt="San Antonio, Texas Temple">
+                <figcaption>San Antonio Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-5">
+                <img src="images/manti-temple.webp" alt="Manti, Utah Temple">
+                <figcaption>Manti Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-6">
+                <img src="images/salt-lake-temple.webp" alt="Salt Lake City, Utah Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-7">
+                <img src="images/vernal-temple.webp" alt="Vernal, Utah Temple">
+                <figcaption>Vernal Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-8">
+                <img src="images/Los-Angeles-temple.webp" alt="Los Angeles, California Temple">
+                <figcaption>Los Angeles Temple</figcaption>
+            </figure>
+            <figure class="temple-pic" id="temple-9">
+                <img src="images/san-diego-temple.webp" alt="San Diego, California Temple">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | South Carolina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

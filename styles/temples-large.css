@@ -1,0 +1,54 @@
+@media screen and (min-width: 500px) {
+    header {
+        max-width: 1900px;
+    }
+
+    header p {
+        font-size: 4rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+
+    }
+
+    main {
+        max-width: 1900px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .temple-figures {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .temple-figures img {
+        max-width: 300px;
+        grid-gap: 5px;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}
