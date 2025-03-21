@@ -25,6 +25,10 @@ h1 {
 
 #menu::before {
     content: "☰";
+    background: rgb(185, 182, 182);
+    padding: 0.1rem;
+    border: 0.1rem solid black;
+    border-radius: 5px;
 }
 
 #menu.open::before {
@@ -77,7 +81,6 @@ h2 {
 .temple-figures {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
     row-gap: 5px;
     place-items: center;
     padding: 1rem;
