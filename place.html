@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Week 3 Assignment: Country Page</title>
+    <meta name="author" content="Jessica Kitchen">
+    <meta name="description" content="A webpage that describes a place you have visited, in this case, Tasmania.">
+    <!--Link to CSS files-->
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!--Link to JS file-->
+    <script src="scripts/place.js" defer></script>
+    <!--Link to Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Tasmania</h1>
+    </header>
+
+    <main>
+        <div class="herodiv">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/tasmania-large.webp" media="(min-width: 501px)">
+                    <source srcset="images/tasmania-small.webp" media="(max-width: 500px)">
+                    <img src="images/tasmania-small.webp" alt="Landscape in Tasmania">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <ul class="data-list">
+                    <li>Area: 68,402 km<sup>2</sup></li>
+                    <li>Population: 571,165</li>
+                    <li>Capital: Hobart</li>
+                    <li>Languages: English</li>
+                    <li>Currency: Australian Dollars</li>
+                    <li>Time Zone: UTC+10</li>
+                    <li>Calling Code: +61 3</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <img src="images/weather-icon-mobile.svg" alt="sun behind clouds">
+                </div>
+                <div class="weather-stats">
+                    <ul class="weather-list">
+                        <li id="temperature">Temperature: temperature-placeholder &deg;C</li>
+                        <li id="conditions">Conditions: conditions-placeholder</li>
+                        <li id="wind">Wind: wind-placeholder km/h</li>
+                        <li id="wind-chill">Wind Chill: wind-chill-placeholder &deg;C</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | South Carolina</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
