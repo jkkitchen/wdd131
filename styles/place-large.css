@@ -11,9 +11,6 @@
 
     main {
         max-width: 1200px;
-        margin: 0 auto;
-        padding: 0;
-
     }
 
     .herodiv {
@@ -28,8 +25,11 @@
     }
 
     picture {
-        border-bottom: solid 1rem var(--border-color);
         max-height: 600px;
+    }
+
+    .hero img {
+        border-bottom: solid 1rem var(--border-color);
     }
 
     .data {
@@ -64,17 +64,17 @@
     h2 {
         background: var(--main-color);
         color: var(--text-color);
-        border-bottom: 0.5rem solid var(--border-color);        
+        border-bottom: 0.5rem solid var(--border-color);
     }
 
     .weather h2::after {
         content: "⛅";
     }
 
-        /*To make it so the svg file doesn't show when it's fullscreen */
-        .weather img {
-            display: none;
-        }
+    /*To make it so the svg file doesn't show when it's fullscreen */
+    .weather img {
+        display: none;
+    }
 
     footer {
         font-size: 1.1rem;
