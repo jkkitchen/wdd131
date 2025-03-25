@@ -1,0 +1,46 @@
+:root {
+    --title_color: black;
+    --header-color: rgb(77, 72, 72);
+    --zebra: rgb(240, 237, 237);
+    text-align: center;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid lightgray;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 0.85rem;
+    padding: 10px;
+    font-weight: 100;
+}
+
+tr:first-child th,
+#blank {
+    background: var(--title_color);
+    color: white;
+}
+
+th {
+    background: var(--header-color);
+    color: white;
+    font-size: larger;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--zebra);
+}
+
+th {
+    padding: 7px 15px;
+}
+
+td {
+    padding: 7px 15px;
+    border: thin solid rgb(163, 162, 162);
+}
