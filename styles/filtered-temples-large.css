@@ -17,7 +17,9 @@
         font-size: 1.7rem;
     }
 
-    
+    #button {
+        display: none;
+    }
 
     .header-menu {
         display: flex;
@@ -31,10 +33,6 @@
         max-width: 1900px;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
-
     .temple-figures {
         display: grid;
         width: 100%;
@@ -43,7 +41,7 @@
     }
 
     .temple-figures img {
-        max-width: 300px;
+        width: 400px;
         grid-gap: 5px;
     }
 

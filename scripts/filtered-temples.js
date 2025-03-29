@@ -9,7 +9,7 @@ currentyear.innerHTML = `<span id="currentyear">${today.getFullYear()}</span>`;
 lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
 
 //Code for hamburger menu
-const hamButton = document.querySelector('#menu');
+const hamButton = document.querySelector('#button');
 const navigation = document.querySelector('.header-menu');
 
 hamButton.addEventListener('click', () => {
@@ -41,7 +41,7 @@ const temples = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
@@ -102,18 +102,49 @@ const temples = [
     },
 ];
 
-//Loop through the array and create "temple cards" for each temple
-createTempleCard(temples);
+//Additional code to pull out information needed
+function dedicationYear(dedicationString) {
+    const dedicationYear = parseInt(dedicationString.slice(0, 4));
+    return dedicationYear;
+};
 
+//Define new arrays for each of the requirements (old, new, large, small)
+const oldTemples = temples.filter((temple) => dedicationYear(temple.dedicated) < 1900);
+const newTemples = temples.filter((temple) => dedicationYear(temple.dedicated) > 2000);
+const largeTemples = temples.filter((temple) => temple.area > 90000);
+const smallTemples = temples.filter((temple) => temple.area < 10000);
+
+//Create variables for the links
 const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
 
+//Add Event Listeners and create temple cards for the requested temples
 oldLink.addEventListener("click", () => {
-    let oldTemples = temples.filter((temple) => temple.dedication.textContent.slice(0, 4) < 1900);
     createTempleCard(oldTemples);
 });
 
+newLink.addEventListener("click", () => {
+    createTempleCard(newTemples);
+});
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(largeTemples);
+});
+
+smallLink.addEventListener("click", () => {
+    createTempleCard(smallTemples);
+});
+
+//Default, or Home: Loop through the array and create "temple cards" for each temple
+createTempleCard(temples);
+
+//Function to create the "temple cards" for each temple
 function createTempleCard(filteredTemples) {
-    document.querySelector(".temple-figures").innerHTML = "";
+    //Clear before each button is pushed so new arrays can be made
+    document.querySelector(".temple-figures").innerHTML = '';
+    //Function
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
