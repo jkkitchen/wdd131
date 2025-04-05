@@ -1,0 +1,10 @@
+@media only screen and (min-width: 400px) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 400rem;
+        margin: auto;
+    }
+}

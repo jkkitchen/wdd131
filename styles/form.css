@@ -1,0 +1,70 @@
+:root {
+    font-family: 'Afcad Flux', Arial, sans-serif;
+    --blue: #445ba9;
+}
+
+
+body {
+    width: 100%;
+    max-width: 400px;
+}
+
+header, footer {
+    background: var(--blue);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+form {
+    background: rgb(231, 230, 230);
+    padding: 0.5rem;
+}
+
+#intro {
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+label {
+    display: block;
+    font-size: .9rem;
+}
+
+select,
+input[type=date],
+input[type=text] {
+    height: 40px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    transform: scale(1.2);
+}
+
+.form p {
+    display: inline;
+    font-style: italic;
+    font-size: 0.8rem
+}
+
+.optional {
+    color: rgb(5, 5, 99);
+}
+
+div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--blue), #1c2544);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
