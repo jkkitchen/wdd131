@@ -52,7 +52,7 @@ let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 
 
 //Display the number of reviews
-reviewsDisplay.textContent = numReviews;
+reviewsDisplay.textContent = numReviews + 1;
 
 
 //Increase the number of reviews by one
