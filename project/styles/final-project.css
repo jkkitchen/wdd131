@@ -1,0 +1,317 @@
+:root {
+    --main-font: "Winky Sans";
+    --text-font: Inter;
+    --main-color: #0A5C2C;
+    --butterscotch: #D8973C;
+    --gray: #363437;
+    --pink: #AF2849;
+}
+
+
+h1 {
+    display: block;
+    width: 100%;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+    font-family: var(--main-font), sans-serif;
+}
+
+#menu-dropdown::before {
+    content: "☰";
+    background: rgb(185, 182, 182);
+    padding: 0.1rem;
+    border: 0.1rem solid white;
+    border-radius: 5px;
+}
+
+#menu-dropdown.open::before {
+    content: "❌";
+}
+
+.header-and-button {
+    display: flex;
+    background: var(--main-color);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-dropdown {
+    padding: 0.5rem;
+}
+
+.nav-menu {
+    font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-color);
+    color: white;
+}
+
+#main-menu nav a {
+    display: none;
+    text-decoration: none;
+    color: var(--gray);
+    padding: 1rem;
+    text-align: center;
+}
+
+#main-menu nav a:hover {
+    text-decoration: underline;
+}
+
+.open #main-menu a {
+    display: block;
+}
+
+h2 {
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--text-font);
+}
+
+
+/*---------------HOME PAGE PICTURES------------- */
+.hero-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-bottom: 0.25rem solid var(--butterscotch);
+}
+
+picture {
+    max-height: 530px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*---------------------FORM-------------------*/
+
+.newsletter-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-signup {
+    background: white;
+    color: var(--gray);
+    padding: 1rem;
+}
+
+.newsletter-signup h2 {
+    color: var(--main-color);
+}
+
+form {
+    font-family: var(--text-font);
+}
+
+label {
+    display: block;
+    padding: 0.5rem;
+}
+
+legend {
+    font-style: italic;
+}
+
+fieldset {
+    margin: .5rem;
+}
+
+#newsletter-topics {
+    padding: 0.5rem;
+}
+
+input[type=text],
+input[type=email] {
+    height: 40px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--pink), #DE3F67);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem;
+    box-shadow: 1px 1px 4px #999;
+    place-items: center;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    align-self: center;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+#subscription-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------ABOUT-US-----------------------*/
+
+.about-us {
+    background: var(--butterscotch);
+    color: var(--gray);
+    padding: 1rem;
+}
+
+
+.helpful-links li {
+    list-style: circle;
+    padding: .2rem;
+    font-family: Inter, sans-serif;
+}
+
+.helpful-links a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.helpful-links a:hover {
+    text-decoration: underline;
+}
+
+/*--------------LOCAL FABRIC---------------*/
+
+#local-fabric h2 {
+    color: var(--main-color)
+}
+
+
+.local-fabric-shops p {
+    font-family: Inter, sans-serif;
+    color: var(--gray);
+}
+
+.local-fabric-shops a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.local-fabric-shops h3 {
+    font-family: var(--main-font), sans-serif;
+    text-align: center;
+    color: var(--gray);
+}
+
+.local-fabric-shops img {
+    max-width: 400px;
+    max-height: 325px;    
+    object-fit: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: .2rem solid var(--main-color);
+}
+
+
+/*-----------UPCOMING CLASSES------------------ */
+
+#upcoming-classes {
+    background: var(--pink);
+    padding-bottom: 1rem;
+}
+
+#upcoming-classes h2 {
+    color: white;
+    background: var(--gray);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#upcoming-classes h3 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: var(--main-font), sans-serif;
+    padding-left: 2.8rem;
+}
+
+
+.class-links li {
+    list-style: none;
+    font-family: Inter, sans-serif;
+}
+
+.class-links a {
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 0;
+}
+
+.class-links a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------------QUILTING GUILDS TABLE-------------- */
+
+#quilt-guilds h2 {
+    color: var(--main-color);
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid var(--gray);
+    font-family: Inter, sans-serif;
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--gray);
+}
+
+th {
+    background: var(--butterscotch);
+    color: var(--gray);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--gray);
+}
+
+
+
+
+
+
+/*---------------FOOTER------------------- */
+
+footer {
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 0.25rem;
+    margin: 0 auto;
+}
+
+footer a {
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+#lastModified {
+    font-style: italic;
+}
