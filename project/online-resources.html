@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/final-project-large.css">
     <!--Link to JS File-->
     <script src="scripts/final-project.js" defer></script>
+    <script src="scripts/online-resources.js" defer></script>
     <!--Link to Google Fonts for Winky Sans and Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,64 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-and-button">
+            <h1>Quilting in Greenville</h1>
+            <div id="menu-dropdown"></div>
+        </div>
+        <div id="main-menu">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="local-resources.html">Local Resources</a></li>
+                    <li><a href="online-resources.html">Online Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section id="seasonal-patterns">
+            <h2>Seasonal Quilt Patterns</h2>
+            <div class="quilt-patterns">
+                <!--Fill in with "cards" in Javascript-->
+            </div>
+        </section>
+
+        <section id="online-fabric">
+            <h2>Where To Buy Fabric Online?</h2>
+            <div class="online-fabric-stores">
+                <!--Fill in with "cards" in Javascript-->
+            </div>
+        </section>
+
+        <section id="binding-calculator">
+            <h2>Binding Calculator</h2>
+            <form id="calculation-inputs">
+                <fieldset>
+                    <legend>Quilt Dimensions</legend>
+                    <div class="binding-div">Please enter the following quilt dimensions:</div>
+                    <label>Length: <input type="number" id="length" required> inches</label>
+                    <label>Width: <input type="number" id="width" required> inches</label>                    
+                </fieldset>
+                <fieldset>
+                    <legend>Binding Width</legend>
+                    <div class="binding-div">Please select the width of the binding: </div>
+                    <label><input type="radio" id="2.25-binding" name="binding-width" value="2.25" required> 2.25 inches</label>
+                    <label><input type="radio" id="2.5-binding" name="binding-width" value="2.5" required> 2.5 inches</label>
+                </fieldset>
+                <div id="calculate-button">
+                    <input type="submit" value="Calculate My Binding">
+                </div>
+            </form>
+            <p><span class="binding-yardage-label">Amount of Binding Needed: </span><span class="binding-yardage"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | Quilting in Greenville</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

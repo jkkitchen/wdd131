@@ -10,8 +10,9 @@
     <!--Link to CSS Files-->
     <link rel="stylesheet" href="styles/final-project.css">
     <link rel="stylesheet" href="styles/final-project-large.css">
-    <!--Link to JS File-->
+    <!--Link to JS Files-->
     <script src="scripts/final-project.js" defer></script>
+    <script src="scripts/local-resources.js" defer></script>
     <!--Link to Google Fonts for Winky Sans and Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +41,10 @@
     <main>
         <section id="local-fabric">
             <h2>Where to Buy Fabric?</h2>
+            <div id="array-section">
+                <p>Please select the area of Greenville you are interested in:</p>
+            </div>
+
             <div class="local-fabric-shops">
                 <!--Fill in with "cards" in Javascript-->
             </div>
@@ -158,18 +163,12 @@
                 </tbody>
             </table>
         </section>
-
-
     </main>
-
+    
     <footer>
-        <footer>
-            <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | Quilting in Greenville</p>
-            <p id="lastModified"></p>
-        </footer>
+        <p>&copy;<span id="currentyear"></span> | Jessica Kitchen | Quilting in Greenville</p>
+        <p id="lastModified"></p>
     </footer>
-
-
 </body>
 
 </html>

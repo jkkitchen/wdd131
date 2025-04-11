@@ -2,9 +2,9 @@
     --main-font: "Winky Sans";
     --text-font: Inter;
     --main-color: #0A5C2C;
-    --butterscotch: #D8973C;
-    --gray: #363437;
-    --pink: #AF2849;
+    --butterscotch: #E2B06A;
+    --gray: #2B292E;
+    --pink: #A02745;
 }
 
 
@@ -19,6 +19,18 @@ h1 {
     margin: 0 auto;
     font-family: var(--main-font), sans-serif;
 }
+
+h2 {
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--text-font);
+}
+
+/* ---------------DROPDOWN MENU----------------*/
 
 #menu-dropdown::before {
     content: "☰";
@@ -53,7 +65,7 @@ h1 {
     color: white;
 }
 
-#main-menu nav a {
+.nav-menu a {
     display: none;
     text-decoration: none;
     color: var(--gray);
@@ -61,24 +73,11 @@ h1 {
     text-align: center;
 }
 
-#main-menu nav a:hover {
-    text-decoration: underline;
-}
 
-.open #main-menu a {
+.nav-menu.open a {
     display: block;
+    color: white;
 }
-
-h2 {
-    font-family: var(--main-font);
-    text-align: center;
-    font-size: 2rem;
-}
-
-p {
-    font-family: var(--text-font);
-}
-
 
 /*---------------HOME PAGE PICTURES------------- */
 .hero-pictures {
@@ -96,7 +95,8 @@ picture {
     overflow-y: hidden;
 }
 
-/*---------------------FORM-------------------*/
+/*---------------NEWSLETTER SUBSCRIPTION FORM--------------*/
+/* Some applies to binding calculator too */
 
 .newsletter-signup {
     display: flex;
@@ -136,8 +136,10 @@ fieldset {
 }
 
 input[type=text],
-input[type=email] {
+input[type=email],
+input[type=number] {
     height: 40px;
+    width: 200px;
 }
 
 input[type="submit"] {
@@ -147,7 +149,7 @@ input[type="submit"] {
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 2rem;
     box-shadow: 1px 1px 4px #999;
     place-items: center;
@@ -191,7 +193,7 @@ input[type="submit"] {
     text-decoration: underline;
 }
 
-/*--------------LOCAL FABRIC---------------*/
+/*--------------LOCAL FABRIC SHOPS---------------*/
 
 #local-fabric h2 {
     color: var(--main-color)
@@ -216,7 +218,7 @@ input[type="submit"] {
 
 .local-fabric-shops img {
     max-width: 400px;
-    max-height: 325px;    
+    max-height: 325px;
     object-fit: cover;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -291,6 +293,109 @@ th {
     text-align: center;
     border-bottom: 2px solid var(--gray);
 }
+
+
+/*--------------SEASONAL PATTERNS---------------*/
+
+#seasonal-patterns h2 {
+    color: var(--main-color)
+}
+
+.quilt-patterns p {
+    font-family: Inter, sans-serif;
+    color: var(--gray);
+}
+
+.quilt-patterns a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.quilt-patterns h3 {
+    font-family: var(--main-font), sans-serif;
+    text-align: center;
+    color: var(--gray);
+}
+
+.quilt-patterns img {
+    max-width: 200px;
+    object-fit: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#seasonal-patterns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------------ONLINE FABRIC STORES---------------*/
+
+#online-fabric {
+    background: var(--butterscotch);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.online-fabric-stores {
+    padding: 2rem;
+}
+
+#online-fabric h2 {
+    color: var(--gray)
+}
+
+.online-fabric-stores a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.online-fabric-stores h3 {
+    font-family: var(--main-font), sans-serif;
+    text-align: center;
+    color: var(--gray);
+    padding-bottom: 2rem;
+}
+
+.online-fabric-stores img {
+    max-width: 200px;
+    object-fit: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: thin solid var(--pink);
+}
+
+
+/*------------BINDING CALCULATOR------------*/
+
+#binding-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#binding-calculator h2 {
+    color: var(--pink);
+}
+
+#binding-calculator p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gray);
+    padding: 1rem;
+}
+
+.binding-div,
+input[type=radio] {
+    padding: 0.5rem;
+}
+
+
+
+
 
 
 
