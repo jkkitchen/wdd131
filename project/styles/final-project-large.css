@@ -55,6 +55,10 @@
 
     /*-------------------LOCAL RESOURCES-------------------*/
 
+    .shop-locations {
+        display: flex;        
+    }
+
     .local-fabric-shops {
         font-family: Inter, sans-serif;
         display: grid;
@@ -78,10 +82,7 @@
 
     .local-fabric-shops img {
         max-width: 400px;
-        max-height: 325px;
-        object-fit: cover;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        max-height: 400px;
     }
 
     .class-lists {

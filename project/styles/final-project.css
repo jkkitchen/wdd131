@@ -199,10 +199,40 @@ input[type="submit"] {
     color: var(--main-color)
 }
 
-
 .local-fabric-shops p {
     font-family: Inter, sans-serif;
     color: var(--gray);
+}
+
+#array-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+#array-section p {
+    text-align: center;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.shop-locations {
+    font-family: Inter, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--gray);
+}
+
+.shop-locations a {
+    text-decoration: none;
+    color: var(--gray);
+    text-align: center;
+}
+
+.shop-locations li {
+    padding: 0.3rem;
 }
 
 .local-fabric-shops a {
@@ -213,12 +243,11 @@ input[type="submit"] {
 .local-fabric-shops h3 {
     font-family: var(--main-font), sans-serif;
     text-align: center;
-    color: var(--gray);
+    color: var(--gray);   
 }
 
 .local-fabric-shops img {
-    max-width: 400px;
-    max-height: 325px;
+    max-height: 300px;
     object-fit: cover;
     overflow-x: hidden;
     overflow-y: hidden;
